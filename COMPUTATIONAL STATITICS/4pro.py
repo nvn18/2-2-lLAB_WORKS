@@ -26,8 +26,37 @@ def ranks(e):
             if(e[j] == e[i]):
                 n+=1
         
-        ranke[i] = ran+(n-1)/2
+        ranke[i] = ran+n/2
     return ranke
+def RemDups(data):
+    RemDups = []
+    
+    for i in data:
+        if i not in RemDups:
+            RemDups.append(i)
+            
+    return RemDups
+
+def CF(x,y):
+    cf = 0
+    
+    x = list(x)
+    y = list(y)
+    
+    RemDups_x = RemDups(x)
+    RemDups_y = RemDups(y)
+    
+    for i in RemDups_x:
+        count = x.count(i)
+        if count > 1:
+            cf += (count * (count**2 - 1)) / 12
+            
+    for i in RemDups_y:
+        count = y.count(i)
+        if count > 1:
+            cf += (count * (count**2 - 1)) / 12
+    
+    return cf
 
 x=np.array(list(map(float,input("enter the X:").split())))
 y=np.array(list(map(float,input("enter the Y:").split())))
@@ -39,9 +68,11 @@ print(B)
 
 di=np.subtract(A,B)
 print(di)
-di2=di**2
-print(di2)
-s=sum(di2)
-den=n*(n**2-1)
-sp=(1-6*(s)/den)
+disq=np.square(di)
+print(disq)
+s=sum(disq)
+cf=CF(x,y)
+s+=cf
+sp=1-((6*s)/(n*(n**2-1)))
 print(sp)
+print(cf)
