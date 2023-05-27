@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bio Data Form</title>
+		<style>
+            /* Main style */
+			body 
+			{
+			  font-family: calibri;
+			  background-color: burlywood;
+			}
+			
+			h1
+			{
+				text-align: center;
+			}
+
+			/* Form container */
+			form 
+			{
+			  background-color: beige;
+			  padding: 20px;
+			  border-radius: 5px;
+			  box-shadow: 0px 0px 5px #ccc;
+			  width: 500px;
+			  margin: auto;
+			  font-weight: bold;
+			  align-items: center;
+			}
+
+			/* Form label */
+			label 
+			{
+			  display: block;
+			  margin-top: 10px;
+			}
+
+			/* Input fields */
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			input[type="date"],
+			input[type="number"],
+			input[type="file"],
+			select,
+			textarea 
+			{
+			  width: 100%;
+			  padding: 10px;
+			  margin-top: 5px;
+			  margin-bottom: 15px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			  font-size: 16px;
+			}
+
+			/* Select field */
+			select 
+			{
+			  height: 40px;
+			}
+
+			/* Submit button */
+			input[type="submit"],input[type="reset"] 
+			{
+			  background-color: #4CAF50;
+			  color: #fff;
+			  padding: 10px 20px;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			  font-size: 16px;
+			  margin-top: 10px;
+			  margin-bottom: 15px;
+			}
+
+			/* Hover effect */
+			input[type="submit"]:hover 
+			{
+			  background-color: #45a049;
+			}
+			input[type="reset"]:hover 
+			{
+			  background-color: #45a049;
+			}
+        </style>
+    </head>
+
+    <body>
+        <form autocomplete="off" action="" method="post">
+            <h1><u>BIO DATA FORM</u></h1>
+			
+			<label>Name:</label>
+			<input type="text" name="name" id="name" required>
+            
+            <label>Email:</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+            
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            
+            <label>Gender:</label>
+            <select name="gender" id="gender" required>
+				<option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Trans Gender">Trans Gender</option>
+                <option value="Non-Binary">Non-Binary</option>
+            </select>
+            
+            <label>Address:</label>
+            <textarea name="address" id="address"></textarea>
+            
+            <label><u>Education Details</u></label>
+            <br>
+            <label><u>1. Graduation</u></label>
+            <label>College name:</label>
+            <input type="text" name="collegename1" id="collegename1" required>
+            
+            <label>GPA:</label>
+            <input type="number" name="gpa1" id="gpa1" min="0" max="10" step="0.01" required>
+            
+            <label>Year of Passing:</label>
+            <input type="number" name="passyear1" id="passyear1" min="1900" max="2100" required>
+            
+			<br><br>
+			
+            <label><u>2. Intermediate</u></label>
+            <label>College name:</label>
+            <input type="text" name="collegename2" id="collegename2">
+            
+            <label>Percentage:</label>
+            <input type="number" name="percentage" id="percentage" min="0" max="100" step="0.01">
+            
+            <label>Year of Passing:</label>
+            <input type="number" name="passyear2" id="passyear2" min="1900" max="2100" >
+            
+			<br><br>
+			
+            <label><u>3. 10th Class:</u></label>
+            <label>School Name:</label>
+            <input type="text" name="schoolname" id="schoolname">
+            
+            <label>GPA:</label>
+            <input type="number" name="gpa2" id="gpa2" min="0" max="10" step="0.01">
+            
+            <label>Year of Passing:</label>
+            <input type="number" name="passyear3" id="passyear3" min="1900" max="2100" >
+            
+			<br><br>
+			
+            <label>Work Experience (in years):</label>
+            <input type="number" name="experience" id="experience" min="0" max="40" required>
+            
+			<label>Id Proof:</label>
+			<input type="file" required>
+
+			<br>
+
+			<input type="checkbox">&nbsp; I have checked the form before submitting.
+			
+			<br><br>
+			
+            <input type="submit" value="SUBMIT FORM">
+            <input type="reset" value="CLEAR FORM">
+        </form>
+    </body>
+</html>
