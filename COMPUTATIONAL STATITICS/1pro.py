@@ -17,9 +17,6 @@ def mean(n):
 x=np.array(list(map(float,input("enter the X:").split())))
 y=np.array(list(map(float,input("enter the Y:").split())))
 
-xy = x*y
-xsq = x*x
-
 n=0
 xy=x*y
 xsq=x*x
