@@ -61,15 +61,15 @@ print("the means of errors:",er)
 
 Fcal=tr/er
 if(Fcal>1):
-    print("The Fcal value is:"Fcal)
+    print("The Fcal value is:",Fcal)
 elif(Fcal<1):
     Fcal=1/Fcal
-    print("The Fcal value is:"Fcal)
+    print("The Fcal value is:",Fcal)
 else:
     print('none')
 
 Ftable = s.f.ppf(1-alpha,k-1,N-k)
-print("The Ftable value is:"Ftable)
+print("The Ftable value is:",Ftable)
 
     
 print("---------------------ANOVA ONE WAY CLASSIFICATION TABLE------")
