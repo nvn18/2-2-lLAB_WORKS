@@ -1,3 +1,7 @@
+#week 5:
+#Write a python program to classify the data based on one way ANOVA.
+
+
 import numpy as np
 import scipy.stats as s
 
@@ -22,8 +26,8 @@ def mysum(n):
 name=input("enter the name of the treatment:")
 k=int(input("enter the number of inputs:"))
 treat=[]
-for i in range(y):
-    a=np.array(list(map(int,input(f"enter the {name}{i+1}").split())))
+for i in range(k):
+    a=np.array(list(map(float,input(f"enter the {name}{i+1}").split())))
     treat.append(a)
 alpha=float(input("enter the level of siginificance:"))
 
@@ -78,7 +82,7 @@ print("-------------------------------------------------------------------------
 d={}
 
 d={1:["treatment",round(SSTR,3),n1,tr,''],
-   2:["error",round(SSE,5),n2,er,F],
+   2:["error",round(SSE,5),n2,er,Fcal],
    3:["TOTAL",round(T1,3),total,'',''],
 }
 print("{:<10} {:<10} {:<10} {:<10} {:<10}".format('SOV','SOS','DOF','MOS','VR'))
@@ -94,6 +98,7 @@ if(Fcal > Ftable):
     print(f"We reject h0 and there is no homogenity among:{name}")
 else:
     print(f"We accpet h0 and there is homogenity among:{name}")
+
 
 
 
