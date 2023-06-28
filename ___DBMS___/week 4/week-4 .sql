@@ -4,12 +4,16 @@ Q.NO-1.1:
 
 Find the maximum and average capacity of buildings in the university.
 
-SQL> select max(capacity) as max_capacity,avg(capacity) as average_capacity
-  2  from classroom;
+SQL> select building, max(capacity) as max_capacity,avg(capacity) as average_capacity
+  2  from classroom
+    group by building;
 
-MAX_CAPACITY AVERAGE_CAPACITY
------------- ----------------
-         500              132
+BULIDING                       MAX_CAPACITY    AVERAGE
+------------------------------ ------------ ----------
+packard                                 500        500
+painter                                  10         10
+taylor                                   70         70
+watson                                   50         40
 
 Q.NO-1.2:
 
