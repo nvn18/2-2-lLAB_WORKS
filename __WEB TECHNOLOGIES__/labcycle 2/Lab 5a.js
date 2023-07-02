@@ -2,7 +2,7 @@
 
 let Output = document.getElementById("StringOutput");
 
-let str = new String("Hello, My Name is Tayyab.");
+let str = new String("Hello, My Name is nvn.");
 
 Output.innerHTML = "<u>Original String:</u> " + str + "<br><u>String Operations:<u><br>";
 
@@ -17,9 +17,9 @@ Output.innerHTML += "5. Uppercase: " + str.toUpperCase() + "<br>";
 Output.innerHTML += "6. Lowercase: " + str.toLowerCase() + "<br>";
 
 Output.innerHTML += "7. Starts with 'Hello': " + str.startsWith("Hello") + "<br>";
-Output.innerHTML += "8. Ends with 'Tayyab.': " + str.endsWith("Tayyab.") + "<br>";
+Output.innerHTML += "8. Ends with 'NVN.': " + str.endsWith("NVN.") + "<br>";
 
-Output.innerHTML += "9. Index of 'Tayyab': " + str.indexOf("Tayyab") + "<br>";
+Output.innerHTML += "9. Index of 'NVN': " + str.indexOf("NVN") + "<br>";
 
 let replacedStr = str.replace("Hello", "Hi");
 Output.innerHTML += "10. Replaced string: " + replacedStr + "<br>";
