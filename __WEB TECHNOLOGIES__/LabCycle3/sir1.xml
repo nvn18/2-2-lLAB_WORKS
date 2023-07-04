@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teacher >
+<sir sub="subject1">
+<name>CHANDRA SEKHAR SIR</name>
+<des>ASSOCIATE PROFESSOR</des>
+<subject>COMPUTER ORGANIZATION</subject>
+</sir>
+<sir sub="subject2">
+<name>CHANDRA SEKHAR SIR</name>
+<des>ASSOCIATE PROFESSOR</des>
+<subject>WEB TECHNOLOGIES</subject>
+</sir>
+</teacher>

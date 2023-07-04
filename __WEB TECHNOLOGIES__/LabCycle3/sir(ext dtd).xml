@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE data SYSTEM "data.dtd">
+
+<data>
+   <sir type="sub1">
+        <name>N.CHANDRA SEKHAR</name>
+        <subject>WEB TECHNOLOGIES</subject>
+        <des>ASST.PROFESSOR</des>
+    </sir>
+
+    <sir type="sub2">
+        <name>N.CHANDRA SEKHAR</name>
+        <subject>COMPUTER ORGANIZATION</subject>
+        <des>ASST.PROFESSOR</des>
+    </sir>
+
+    <sir type="sub3">
+        <name>N.CHANDRA SEKHAR</name>
+        <subject>LOADING.....</subject>
+        <des>ASST.PROFESSOR</des>
+    </sir>
+</data>
