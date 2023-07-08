@@ -1,7 +1,0 @@
-
-
-<!ELEMENT data (sir+ , subject, name, des)>
-<!ELEMENT sir (#PCDATA)>
-<!ELEMENT subject (#PCDATA)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT des (#PCDATA)>
