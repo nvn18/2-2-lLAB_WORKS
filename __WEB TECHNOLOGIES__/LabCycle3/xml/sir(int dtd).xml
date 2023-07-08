@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE data[
+<!ELEMENT data (sir+ , subject, name, des)>
+<!ELEMENT sir (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT des (#PCDATA)>
+ ]>
+
+ <data>
+   <sir type="sub1">
+        <name>N.CHANDRA SEKHAR</name>
+        <subject>WEB TECHNOLOGIES</subject>
+        <des>ASST.PROFESSOR</des>
+    </sir>
+
+    <sir type="sub2">
+        <name>N.CHANDRA SEKHAR</name>
+        <subject>COMPUTER ORGANIZATION</subject>
+        <des>ASST.PROFESSOR</des>
+    </sir>
+</data>
