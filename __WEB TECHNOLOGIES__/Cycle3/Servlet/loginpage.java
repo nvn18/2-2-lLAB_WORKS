@@ -26,7 +26,7 @@ public class LoginDemo extends HttpServlet {
       String name=request.getParameter("username");//will return value
       String pwd=request.getParameter("pass");
 	  //out.println("Welcome "+name);
-      if(name.equalsIgnoreCase("neeraj")&&pwd.equalsIgnoreCase("neeraj"))
+      if(name.equalsIgnoreCase("NVN")&&pwd.equalsIgnoreCase("AURORA"))
           out.println("succeusfully login"+name);
       else
           out.println("unsucceusfully login"+name);
