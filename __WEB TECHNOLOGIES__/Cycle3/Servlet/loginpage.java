@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author y21cs185
  */
-public class LoginDemo extends HttpServlet {
+public class loginpage extends HttpServlet {
 
    public void doPost(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
