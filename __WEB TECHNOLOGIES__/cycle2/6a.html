@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>enter your name:</label>
+    <input type="text" id="myinput" onfocus="myfocus()">
+    <label>enter you class:</label>
+    <input type="text" id="inputs" onfocus="fun()" onblur="funs()">
+    <label>section:</label>
+    <input type="text" id="chan" onchange="cha()" value="hello">
+
+    <script>
+        function myfocus()
+        {
+            document.getElementById("myinput").style.background="yellow";
+        }
+        function fun()
+        {
+            document.getElementById("inputs").style.background="green";
+        }
+        function funs()
+        {
+            document.getElementById("inputs").style.background="red";
+        }
+        function cha()
+        {
+            alert("value is changed")
+        }
+        </script>
+</body>
+</html>

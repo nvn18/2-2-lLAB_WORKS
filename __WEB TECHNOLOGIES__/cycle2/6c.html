@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Event Handling</h2>
+    <div id="parent" onclick="clickedparent()">
+        <button>
+        <h2>parent</h2>
+    </button>
+
+    <button id="child" onclick="clickchild()">
+        <p>child</p>
+    </button>
+
+    <script>
+        function clickedparent()
+        {
+            alert("you clicked parent")
+        }
+        function clickchild()
+        {
+            alert("you clicked child")
+        }
+        </script>
+</body>
+</html>

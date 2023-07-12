@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function gcd(x,y)
+    {
+        if(!y)
+        {
+            return x
+        }
+        return gcd(y,x%y)
+    }
+    function reverse(z)
+    {
+         var temp=z
+         var rev =0
+         while(temp)
+         {
+            rev = (rev*10) + (temp%10)
+            temp = Math.floor(temp/10)
+         }
+         return rev
+    }
+    function random()
+    {
+        return Math.floor(Math.random()*100)
+    }
+    var x = parseInt(prompt("enter the x value:"))
+    var y = parseInt(prompt("enter the y value:"))
+    var z = parseInt(prompt("enter the number to reverse:"))
+    document.writeln("the gcd of"+x+"and"+y+" :"+gcd(x,y))
+    document.writeln("the reverse of"+z+" :"+reverse(z))
+    document.writeln("the random number is"+random())
+   </script> 
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       var n1 = parseInt(prompt("enter the nuber1"))
+        var op = prompt("enter the opeator")
+        var n2 = parseInt(prompt("enter the number3"))
+        
+            switch(op){
+                case '+':
+                    sum=n1+n2;
+                    document.writeln("addition= " +sum )
+                    break
+                case '-':
+                    document.writeln("Difference= " + (n1-n2))
+                    break
+                case '*':
+                    document.writeln("Product= " + (n1*n2))
+                    break
+                case '/':
+                    document.writeln("Quotient= " + (n1/n2))
+                    break
+                case '%':
+                    document.writeln("Remainder= " + (n1%n2))
+                    break
+                default:
+                    document.writeln("Invalid operator")
+        }
+        </script>
+</body>
+</html>

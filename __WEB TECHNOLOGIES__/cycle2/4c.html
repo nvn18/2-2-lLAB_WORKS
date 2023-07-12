@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>matrix1:</h1>
+    <table id="mat1"></table>
+    <h1>matrix2:</h1>
+    <table id="mat2"></table>
+    <button id="add">addition</button>
+    <button id="mul">multi</button>
+    <table id="output"></table>
+
+    <script>
+     
+     function printmatrix(obj,mat)
+     {
+        var content = " "
+        for(i=0;i<mat.length;i++)
+        {
+            content+="<tr>"
+                for(j=0;j<mat[1].length;j++)
+                {
+                    content+="<td>"+mat[i][j]+"</td>"
+                }
+            content+="</tr>"
+        }
+        obj.innerHTML = content
+     }
+
+     function addition()
+     {
+        const out = document.querySelector("#output")
+        var mat3=[]
+        for(i=0;i<mat1.length;i++)
+        {
+            var temp=[]
+            for(j=0;j<mat1[i].length;j++)
+            {
+                temp.push(mat1[i][j]+mat2[i][j])
+            }
+            mat3.push(temp)
+        }
+        printmatrix(out,mat3)
+     }
+
+     function multi()
+     {
+        const out = document.querySelector("#output")
+        var mat3=[]
+        for(i=0;i<mat1.length;i++)
+        {
+            var temp=[]
+            for(j=0;j<mat1[i].length;j++)
+            {
+                var res=0
+                    for(k=0;k<mat2.length;k++)
+                    {
+                        res+=mat1[i][k]*mat2[k][j]
+                    }
+                    temp.push(res)
+            }
+            mat3.push(temp)
+        }
+        printmatrix(out,mat3)
+     }
+
+      const mat1=[[1,2,3],
+     [1,2,3],
+     [1,2,3]]
+
+    const  mat2=[[1,2,3],
+     [1,2,3],
+     [1,2,3]]
+
+     printmatrix(document.getElementById("mat1"),mat1)
+     printmatrix(document.getElementById("mat2"),mat2)
+
+     document.getElementById("add").addEventListener("click",addition)
+     document.getElementById("mul").addEventListener("click",multi)
+        </script>
+</body>
+</html>

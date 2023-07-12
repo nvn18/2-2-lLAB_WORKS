@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function binarysearch(arr,key)
+        {
+            var l=0 , r=arr.length-1,mid=0
+            while(l<=r)
+            {
+                mid=Math.floor((l+r)/2)
+
+                if(arr[mid]===key)
+                {
+                    return mid
+                }
+                else if(arr[mid]<key)
+                {
+                    l=mid+1
+                }
+                else
+                {
+                    r=mid-1
+                }
+            }
+            return -1
+        }
+
+        var arr=[10,20,30,40,50]
+        var num=parseInt(prompt("enter the number to find:"))
+        var index = binarysearch(arr,num)
+        if(index!==-1)
+        {
+            document.writeln(num+"is found at"+index)
+        }
+        else
+        {
+            document.writeln(num+"is notfound")
+        }
+
+    </script>
+</body>
+</html> 
