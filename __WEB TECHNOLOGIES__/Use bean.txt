@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Java Bean</title>
+    </head>
+    <body>
+        <h1 align="center">Java bean via JSP</h1>
+        <jsp:useBean id="StudentBean" class="Pack1.studentBean" />
+        <jsp:setProperty name="StudentBean" property="name" value="Roshan" />
+        Get name:
+        <jsp:getProperty name="StudentBean" property="name" /> <br/>
+        <jsp:setProperty name="StudentBean" property="email" value="roshan@gmail.com" />
+        Get email:
+        <jsp:getProperty name="StudentBean" property="email" /> <br/>
+        <jsp:setProperty name="StudentBean" property="rollno" value="160" />
+        Get roll no.:
+        <jsp:getProperty name="StudentBean" property="rollno" /> <br/>
+    </body>
+</html>
+
+
+
+package Pack1;
+
+/**
+ *
+ * @author rosha
+ */
+public class studentBean {
+    int rollno;
+    String name, email;
+    public void setName(String n)
+    {
+        this.name = n;
+    }
+    public void setEmail(String mail)
+    {
+        this.email = mail;
+    }
+    public void setRollno(int num)
+    {
+        this.rollno = num;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public String getEmail(){
+        return this.email;
+    }
+    public int getRollno(){
+        return this.rollno;
+    }
+}
